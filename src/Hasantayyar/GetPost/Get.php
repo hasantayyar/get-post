@@ -21,6 +21,7 @@ class Get extends GetPostBase
 		curl_setopt($ch, CURLOPT_URL, $this->attributes['url']);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $this->connecttimeout);
 	        curl_setopt($ch, CURLOPT_TIMEOUT, $this->timeout);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$result = curl_exec($ch);
 		curl_close($ch);
 		return $result;
