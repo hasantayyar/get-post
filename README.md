@@ -1,24 +1,12 @@
-#Synonyms
+#GetPost
 =========
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hasantayyar/synonyms/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hasantayyar/synonyms/?branch=master)
-
-Warning : This package is still under development. 
-
-###Features
-
-get synonyms or related words from
-- thesaurus.com
-- words.bighugelabs.com
-- google suggestions
-- Wordnik
-- and more
+This is a tiny composer package to handle Get and Post request wrapping curl methods.
 
 ###INSTALL
 
 add this to your composer.json require block
 
-    "hasantayyar/synonyms": "dev-master"
-
+    "hasantayyar/getpost": "dev-master"
 
 Usage
 =====

@@ -1,22 +1,22 @@
 {
-    "name": "hasantayyar/synonyms",
+    "name": "hasantayyar/getpost",
     "type": "library",
-    "description": "Get synonyms of a word",
-    "keywords": ["laravel", "words", "synonym"],
+    "description": "a tiny cURL wrapper to handle get or post requests",
+    "keywords": ["request","http","curl"],
     "license": "LGPL",
     "authors": [
         {
-            "name": "htayyar",
+            "name": "Hasan Tayyar BEŞİK",
             "email": "tayyar.besik@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.3.0",
-        "yangqi/htmldom" : "dev-master"
+	"ext-curl": "*"
     },
     "autoload": {
         "psr-0": {
-            "Hasantayyar\\Synonyms": "src/"
+            "Hasantayyar\\GetPost": "src/"
         }
     },
     "minimum-stability": "dev"

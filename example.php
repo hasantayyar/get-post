@@ -1,12 +1,11 @@
 <?php
 
-namespace Hasantayyar\Synonyms;
+namespace Hasantayyar\GetPost;
 
 include __DIR__ . '/vendor/autoload.php';
 
-$syn = new Synonyms('deneme');
+$get = new Get("http://ifconfig.me/ip");
+$get->setTimeout(10);
+$get->setConnectTimeout(10);
 
-$thesaurusData = $syn->getThesaurus();
-$bighugelabsData = $syn->getBighugelabs();
-$turkishSynonyms = $syn->getTurkishSynonyms();
-
+echo $get->send();
