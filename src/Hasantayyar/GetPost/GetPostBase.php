@@ -3,7 +3,7 @@ namespace Hasantayyar\GetPost;
 
 class GetPostBase {
 	protected $timeout = 5;
-        protected $connectiontimeout = 10;
+        protected $connecttimeout = 10;
 	/**
         * @param integer $timeout - in second
         * @return self 
